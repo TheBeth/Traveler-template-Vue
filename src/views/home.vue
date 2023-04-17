@@ -12,26 +12,20 @@
         </div>
         <div class="home-content">
           <header data-thq="thq-navbar" class="home-navbar">
-            <div data-thq="thq-burger-menu" class="home-menu">
-              <img
-                alt="logo"
-                src="/playground_assets/logo.svg"
-                class="home-logo"
-              />
-              <div class="home-links">
-                <a href="#features" class="home-link link">Features</a>
-                <span class="link">How it works</span>
-                <span class="link">Prices</span>
-                <a href="#find" class="home-link01 link">Contact</a>
-              </div>
-              <button class="home-hamburger button">
-                <svg viewBox="0 0 1024 1024" class="home-icon">
-                  <path
-                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                  ></path>
-                </svg>
-              </button>
+            <div data-thq="thq-burger-menu" class="home-menu"></div>
+            <div class="home-links">
+              <a href="#features" class="home-link link">Features</a>
+              <span class="link">How it works</span>
+              <span class="link">Prices</span>
+              <a href="#find" class="home-link01 link">Contact</a>
             </div>
+            <button class="home-hamburger button">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </button>
             <div data-thq="thq-mobile-menu" class="home-mobile-menu">
               <div
                 data-thq="thq-mobile-menu-nav"
@@ -86,6 +80,7 @@
             </div>
           </header>
           <div class="home-center">
+            <img alt="logo" src="/playground_assets/logo.svg" class="home-logo" />
             <div class="home-heading">
               <h1 class="home-header">See the world like a local</h1>
               <p class="home-caption">
@@ -920,9 +915,6 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.home-logo {
-  height: 33px;
-}
 .home-links {
   gap: var(--dl-space-space-threeunits);
   display: flex;
@@ -1047,6 +1039,9 @@ export default {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+.home-logo {
+  height: 33px;
 }
 .home-heading {
   gap: var(--dl-space-space-oneandhalfunits);
