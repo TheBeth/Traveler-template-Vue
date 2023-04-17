@@ -13,6 +13,11 @@
         <div class="home-content">
           <header data-thq="thq-navbar" class="home-navbar">
             <div data-thq="thq-burger-menu" class="home-menu">
+              <img
+                alt="logo"
+                src="/playground_assets/logo.svg"
+                class="home-logo"
+              />
               <div class="home-links">
                 <a href="#features" class="home-link link">Features</a>
                 <span class="link">How it works</span>
@@ -81,7 +86,6 @@
             </div>
           </header>
           <div class="home-center">
-            <img alt="logo" src="/playground_assets/logo.svg" class="home-logo" />
             <div class="home-heading">
               <h1 class="home-header">See the world like a local</h1>
               <p class="home-caption">
@@ -916,6 +920,9 @@ export default {
   align-items: center;
   justify-content: center;
 }
+.home-logo {
+  height: 33px;
+}
 .home-links {
   gap: var(--dl-space-space-threeunits);
   display: flex;
@@ -1040,9 +1047,6 @@ export default {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-}
-.home-logo {
-  height: 33px;
 }
 .home-heading {
   gap: var(--dl-space-space-oneandhalfunits);
