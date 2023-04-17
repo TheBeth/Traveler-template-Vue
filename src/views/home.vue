@@ -2298,6 +2298,9 @@ export default {
   font-size: 12px;
 }
 @media(max-width: 991px) {
+  .home-menu {
+    width: 865px;
+  }
   .home-links {
     gap: var(--dl-space-space-oneandhalfunits);
   }
