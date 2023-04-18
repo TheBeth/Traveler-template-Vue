@@ -13,12 +13,22 @@
         <div class="home-content">
           <header data-thq="thq-navbar" class="home-navbar">
             <div data-thq="thq-burger-menu" class="home-menu"></div>
-            <div class="home-links">
-              <a href="#features" class="home-link link">Features</a>
-              <span class="link">How it works</span>
-              <span class="link">Prices</span>
-              <a href="#find" class="home-link01 link">Contact</a>
+            <div class="home-container1">
+              <div class="home-container2">
+                <img
+                  alt="logo"
+                  src="/playground_assets/logo.svg"
+                  class="home-logo"
+                />
+              </div>
+              <div class="home-links">
+                <a href="#features" class="home-link link">Features</a>
+                <span class="link">Prices</span>
+                <span class="link">How it works</span>
+                <a href="#find" class="home-link01 link">Contact</a>
+              </div>
             </div>
+            <div class="home-container3"></div>
             <button class="home-hamburger button">
               <svg viewBox="0 0 1024 1024" class="home-icon">
                 <path
@@ -32,7 +42,7 @@
                 data-role="Nav"
                 class="home-nav"
               >
-                <div class="home-container1">
+                <div class="home-container4">
                   <img
                     alt="image"
                     src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
@@ -57,7 +67,7 @@
                   <span class="home-text05">Team</span>
                   <span class="home-text06">Blog</span>
                 </nav>
-                <div class="home-container2">
+                <div class="home-container5">
                   <button class="home-login button">Login</button>
                   <button class="button">Register</button>
                 </div>
@@ -80,7 +90,6 @@
             </div>
           </header>
           <div class="home-center">
-            <img alt="logo" src="/playground_assets/logo.svg" class="home-logo" />
             <div class="home-heading">
               <h1 class="home-header">See the world like a local</h1>
               <p class="home-caption">
@@ -883,13 +892,15 @@ export default {
   left: 0px;
   right: 0px;
   width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   bottom: 0px;
   height: 100%;
   margin: auto;
   display: flex;
   position: absolute;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .home-content {
@@ -907,7 +918,7 @@ export default {
   align-items: center;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .home-menu {
   gap: var(--dl-space-space-twounits);
@@ -915,9 +926,29 @@ export default {
   align-items: center;
   justify-content: center;
 }
+.home-container1 {
+  flex: 0 0 auto;
+  width: 865px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home-container2 {
+  flex: 0 0 auto;
+  width: 865px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home-logo {
+  height: 33px;
+}
 .home-links {
   gap: var(--dl-space-space-threeunits);
   display: flex;
+  align-self: center;
   align-items: center;
   flex-direction: row;
   justify-content: center;
@@ -928,14 +959,25 @@ export default {
 .home-link01 {
   text-decoration: none;
 }
+.home-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
 .home-hamburger {
   cursor: pointer;
   display: flex;
   padding: var(--dl-space-space-unit);
+  align-self: center;
   aspect-ratio: 1;
   border-width: 0px;
   border-radius: var(--dl-radius-radius-round);
   flex-direction: row;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.3);
 }
 .home-icon {
@@ -961,7 +1003,7 @@ export default {
   align-items: flex-start;
   flex-direction: column;
 }
-.home-container1 {
+.home-container4 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -1001,7 +1043,7 @@ export default {
 .home-text06 {
   margin-bottom: var(--dl-space-space-unit);
 }
-.home-container2 {
+.home-container5 {
   flex: 0 0 auto;
   width: auto;
   display: flex;
@@ -1039,9 +1081,6 @@ export default {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-}
-.home-logo {
-  height: 33px;
 }
 .home-heading {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -2302,6 +2341,7 @@ export default {
   }
   .home-links {
     gap: var(--dl-space-space-oneandhalfunits);
+    align-self: center;
   }
   .home-content01 {
     gap: var(--dl-space-space-fourunits);
