@@ -25,7 +25,9 @@
                 <a href="#features" class="home-link link">Features</a>
                 <span class="link">Prices</span>
                 <span class="link">How it works</span>
-                <a href="#find" class="home-link01 link">Contact</a>
+                <router-link to="/contact" class="home-navlink link">
+                  Contact
+                </router-link>
               </div>
             </div>
             <div class="home-container3"></div>
@@ -385,10 +387,10 @@
         inventore veritatis et quasi architecto.
       </p>
       <div class="home-list">
-        <router-link to="/" class="home-navlink09">
+        <router-link to="/" class="home-navlink10">
           <div class="home-location-wrapper"><app-location></app-location></div>
         </router-link>
-        <router-link to="/" class="home-navlink10">
+        <router-link to="/" class="home-navlink11">
           <div class="home-location-wrapper1">
             <app-location
               Location="Paris, France"
@@ -396,7 +398,7 @@
             ></app-location>
           </div>
         </router-link>
-        <router-link to="/" class="home-navlink11">
+        <router-link to="/" class="home-navlink12">
           <div class="home-location-wrapper2">
             <app-location
               Location="Bruges, Belgium"
@@ -404,7 +406,7 @@
             ></app-location>
           </div>
         </router-link>
-        <router-link to="/" class="home-navlink12">
+        <router-link to="/" class="home-navlink13">
           <div class="home-location-wrapper3">
             <app-location
               Location="London, UK"
@@ -700,37 +702,37 @@
           </div>
           <div class="home-links1">
             <div class="home-items">
-              <button class="home-link02 button button-clean">
+              <button class="home-link01 button button-clean">
                 Find a guide
               </button>
-              <a href="#destinations" class="home-link03 button button-clean">
+              <a href="#destinations" class="home-link02 button button-clean">
                 Find a tour
               </a>
-              <a href="#destinations" class="home-link04 button button-clean">
+              <a href="#destinations" class="home-link03 button button-clean">
                 Visit a city
               </a>
-              <a href="#destinations" class="home-link05 button button-clean">
+              <a href="#destinations" class="home-link04 button button-clean">
                 Visit a country
               </a>
             </div>
             <div class="home-items1">
-              <a href="#how-it-works" class="home-link06 button button-clean">
+              <a href="#how-it-works" class="home-link05 button button-clean">
                 How it works
               </a>
-              <button class="home-link07 button button-clean">
+              <button class="home-link06 button button-clean">
                 Cancelation policy
               </button>
-              <button class="home-link08 button button-clean">
+              <button class="home-link07 button button-clean">
                 Local guides
               </button>
-              <button class="home-link09 button button-clean">Affiliate</button>
+              <button class="home-link08 button button-clean">Affiliate</button>
             </div>
             <div class="home-items2">
-              <button class="home-link10 button button-clean">About us</button>
-              <button class="home-link11 button button-clean">Blog</button>
-              <button class="home-link12 button button-clean">Partners</button>
-              <button class="home-link13 button button-clean">Faqs</button>
-              <button class="home-link14 button button-clean">Careers</button>
+              <button class="home-link09 button button-clean">About us</button>
+              <button class="home-link10 button button-clean">Blog</button>
+              <button class="home-link11 button button-clean">Partners</button>
+              <button class="home-link12 button button-clean">Faqs</button>
+              <button class="home-link13 button button-clean">Careers</button>
             </div>
           </div>
         </div>
@@ -956,7 +958,7 @@ export default {
 .home-link {
   text-decoration: none;
 }
-.home-link01 {
+.home-navlink {
   text-decoration: none;
 }
 .home-container3 {
@@ -1717,7 +1719,7 @@ export default {
   flex-direction: row;
   justify-content: center;
 }
-.home-navlink09 {
+.home-navlink10 {
   display: contents;
 }
 .home-location-wrapper {
@@ -1727,7 +1729,7 @@ export default {
   flex-direction: row;
   text-decoration: none;
 }
-.home-navlink10 {
+.home-navlink11 {
   display: contents;
 }
 .home-location-wrapper1 {
@@ -1737,7 +1739,7 @@ export default {
   flex-direction: row;
   text-decoration: none;
 }
-.home-navlink11 {
+.home-navlink12 {
   display: contents;
 }
 .home-location-wrapper2 {
@@ -1747,7 +1749,7 @@ export default {
   flex-direction: row;
   text-decoration: none;
 }
-.home-navlink12 {
+.home-navlink13 {
   display: contents;
 }
 .home-location-wrapper3 {
@@ -2276,8 +2278,12 @@ export default {
   align-items: flex-start;
   flex-direction: column;
 }
+.home-link01 {
+  color: rgb(255, 255, 255);
+}
 .home-link02 {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .home-link03 {
   color: rgb(255, 255, 255);
@@ -2287,19 +2293,18 @@ export default {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.home-link05 {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
 .home-items1 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.home-link06 {
+.home-link05 {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+.home-link06 {
+  color: rgb(255, 255, 255);
 }
 .home-link07 {
   color: rgb(255, 255, 255);
@@ -2307,14 +2312,14 @@ export default {
 .home-link08 {
   color: rgb(255, 255, 255);
 }
-.home-link09 {
-  color: rgb(255, 255, 255);
-}
 .home-items2 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+.home-link09 {
+  color: rgb(255, 255, 255);
 }
 .home-link10 {
   color: rgb(255, 255, 255);
@@ -2326,9 +2331,6 @@ export default {
   color: rgb(255, 255, 255);
 }
 .home-link13 {
-  color: rgb(255, 255, 255);
-}
-.home-link14 {
   color: rgb(255, 255, 255);
 }
 .home-copyright {
